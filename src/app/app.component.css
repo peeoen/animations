@@ -1,3 +1,13 @@
-.container-fluid{
-  margin:15px 10px 15px 10px;
+router-outlet {
+  display: none;
+}
+
+.rounterContainer {
+  position: relative;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.rounterContainer>* {
+  display: block;
 }

@@ -1,12 +1,19 @@
-<div class="container-fluid">
-  <nav>
+<app-header></app-header>
+<div class="container-fluid rounterContainer"  [@routeAnimation]="getDepth(myOutlet)">
+  <!-- <nav>
     <div class="nav nav-tabs" id="nav-tab" role="tablist">
-      <a class="nav-item nav-link active" id="nav-angular-tab" data-toggle="tab" href="#nav-angular" role="tab" aria-controls="nav-angular" aria-selected="true">Angular</a>
+      <a class="nav-item nav-link" id="nav-angular-tab" data-toggle="tab" href="#nav-angular" role="tab" aria-controls="nav-angular" aria-selected="true">Angular</a>
+      <a class="nav-item nav-link active" id="nav-image-tab" data-toggle="tab" href="#nav-image" role="tab" aria-controls="nav-image" aria-selected="true">Images</a>
     </div>
   </nav>
   <div class="tab-content" id="nav-tabContent">
-    <div class="tab-pane fade show active" id="nav-angular" role="tabpanel" aria-labelledby="nav-angular-tab">
-      <app-angular-animations></app-angular-animations>
+    <div class="tab-pane fade show " id="nav-angular" role="tabpanel" aria-labelledby="nav-angular-tab">
+      <app-movie></app-movie>
     </div>
-  </div>
+    <div class="tab-pane fade show active" id="nav-image" role="tabpanel" aria-labelledby="nav-image-tab">
+      <app-cat></app-cat>
+    </div>
+  </div> -->
+  <router-outlet  #myOutlet="outlet"></router-outlet>
 </div>
+

@@ -1,0 +1,9 @@
+<div class="container-fluid">
+  <div class="row justify-content-start">
+    <div class="col-lg-4 group" *ngFor="let dog of dogs">
+      <div class="box card" data-aos="fade-zoom-in"  data-aos-once="true">
+          <img class="card-img-top" [src]="dog" >
+      </div>
+    </div>
+  </div>
+</div>

@@ -3,17 +3,24 @@ import { NgModule } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppComponent } from './app.component';
-import { AngularAnimationsComponent } from './components/angular-animations/angular-animations.component';
+import { HeaderComponent } from './core/header/header.component';
+import { MovieComponent } from './components/movie/movie.component';
+import { CatComponent } from './components/cat/cat.component';
+import { DogComponent } from './components/dog/dog.component';
 
-
+import { AppRoutingModule } from './routes/routing.module';
 @NgModule({
   declarations: [
     AppComponent,
-    AngularAnimationsComponent
+    MovieComponent,
+    CatComponent,
+    HeaderComponent,
+    DogComponent
   ],
   imports: [
     BrowserModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
